@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+img:not(.shop-product img) {
+  transition: 0.5s ease-in;
+}
+img:not(.shop-product img):hover {
+  transform: scale(1.02);
+  transition: 0.5s ease-in;
+}
+
+img:not(.logo img) {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  background-color: #063f53;
+  width: 100%;
+  height: 100px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav img {
+  width: 80px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 10px;
+}
+nav ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-family: "Protest Strike", sans-serif;
+  text-transform: uppercase;
+}
+nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  margin: auto;
+  background-color: #f5f5f5;
+  transition: width 0.3s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../assets/logo/header.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  color: #f5f5f5;
+  font-family: "Protest Strike", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: #063f53;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  color: #f5f5f5;
+  padding: 0 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Protest Strike", sans-serif;
+}
+footer .white-bar {
+  width: 30%;
+  height: 2px;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+footer p {
+  color: #f5f5f5;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Protest Strike", sans-serif;
+  text-transform: uppercase;
+}
+
+.as-home-about,
+.as-home-shop,
+.as-home-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.as-home-about-text,
+.as-home-shop-text,
+.as-home-contact-text {
+  width: 550px;
+  margin: 0 50px;
+}
+.as-home-about-text h2,
+.as-home-shop-text h2,
+.as-home-contact-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: "Protest Strike", sans-serif;
+}
+.as-home-about-text p,
+.as-home-shop-text p,
+.as-home-contact-text p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 0 30px 0;
+}
+
+.as-home-shop-text {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: end;
+}
+
+.as-home-about-img img,
+.as-home-shop-img img,
+.as-home-contact-img img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.as-btn {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #063f53;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: 0.5s ease-in;
+}
+.as-btn:hover {
+  background-color: #f5f5f5;
+  color: #063f53;
+  transition: 0.5s ease-in;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-us .about-us-history {
+  display: flex;
+  margin-top: 100px;
+}
+.about-us .about-us-history .about-us-history-inside-I {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3rem;
+}
+.about-us .about-us-history .about-us-history-inside-I h2 {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.about-us .about-us-history .about-us-history-inside-I p {
+  width: 700px;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+.about-us .about-us-history .about-us-history-inside-II img {
+  width: 400px;
+  border-radius: 10px;
+}
+.about-us .about-us-duty {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-us .about-us-duty .about-us-duty-title {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.about-us .about-us-duty .about-us-duty-main-message {
+  text-align: center;
+  width: 700px;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.about-us .about-us-duty .about-us-duty-wrap {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+.about-us .about-us-duty .about-us-duty-wrap .about-us-duty-item {
+  max-width: 300px;
+}
+.about-us .about-us-duty .about-us-duty-wrap .about-us-duty-item h3 {
+  font-family: "Protest Strike", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.about-us .about-us-duty .about-us-duty-wrap .about-us-duty-item p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+.about-us .about-us-shop {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-us .about-us-shop .about-us-shop-title {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.about-us .about-us-shop .about-us-shop-img {
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.about-us .about-us-shop .about-us-shop-button {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #063f53;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: 0.5s ease-in;
+}
+.about-us .about-us-shop .about-us-shop-button:hover {
+  background-color: #f5f5f5;
+  color: #063f53;
+  transition: 0.5s ease-in;
+}
+
+.shop-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.shop-product {
+  background-color: #f5f5f5;
+  margin: 16px;
+  padding: 16px;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+}
+.shop-product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.shop-product .shop-product-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.shop-product .shop-product-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #212121;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.shop-product .shop-product-button {
+  background-color: #063f53;
+  color: #f5f5f5;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+.shop-product .shop-product-button:hover {
+  background-color: #f5f5f5;
+  color: #063f53;
+  transition: 0.5s ease-in;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.contact-us .contact-us-container {
+  width: 700px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contact-us .contact-us-title {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #212121;
+}
+.contact-us -form {
+  width: 100%;
+  text-align: left;
+}
+.contact-us -form .contact-us-bloc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 48%;
+  margin-bottom: 20px;
+}
+.contact-us .contact-us-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.contact-us .contact-us-input,
+.contact-us .contact-us-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #212121;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.contact-us .contact-us-textarea {
+  resize: none;
+}
+.contact-us .contact-us-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #063f53;
+  color: #f5f5f5;
+  border: 1px solid #063f53;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s ease-in;
+}
+.contact-us .contact-us-btn:hover {
+  color: #063f53;
+  background-color: #f5f5f5;
+  transition: 0.5s ease-in;
+}/*# sourceMappingURL=style.css.map */

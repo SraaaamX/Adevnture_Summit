@@ -1,0 +1,132 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .about-us-history {
+        display: flex;
+        margin-top: 100px;
+
+        .about-us-history-inside-I {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 3rem;
+
+            h2 {
+                font-family: $primary-font;
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+
+            p {
+                width: 700px;
+                text-align: justify;
+                font-size: 1.2rem;
+                font-family: $secondary-font;
+            }
+        }
+
+        .about-us-history-inside-II {
+            img {
+                width: 400px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .about-us-duty {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .about-us-duty-title {
+            font-family: $primary-font;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-us-duty-main-message {
+            text-align: center;
+            width: 700px;
+            font-size: 1.8rem;
+            font-family: $secondary-font;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .about-us-duty-wrap {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 3rem;
+
+            .about-us-duty-item {
+                max-width: 300px;
+
+                h3 {
+                    font-family: $primary-font;
+                    text-align: center;
+                    font-size: 2rem;
+                    margin-bottom: 20px;
+                    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                    font-family: $secondary-font;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    .about-us-shop {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .about-us-shop-title {
+            font-family: $primary-font;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-us-shop-img {
+            width: 300px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .about-us-shop-button {
+            text-decoration: none;
+            font-weight: bold;
+            background-color: $primary-color;
+            color: $secondary-color;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-family: $secondary-font;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 30px;
+            transition: .5s ease-in;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: $primary-color;
+                transition: .5s ease-in;
+            }
+        }
+    }
+}

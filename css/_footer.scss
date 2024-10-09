@@ -1,0 +1,35 @@
+footer {
+    width: 100%;
+    height: 120px;
+    background-color: $primary-color;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: $secondary-color;
+        padding: 0 5px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: $primary-font;
+    }
+
+    .white-bar {
+        width: 30%;
+        height: 2px;
+        margin: 10px auto;
+        border-radius: 10px;
+        background-color: $secondary-color;
+    }
+
+    p {
+        color: $secondary-color;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: $primary-font;
+        text-transform: uppercase;
+    }
+}

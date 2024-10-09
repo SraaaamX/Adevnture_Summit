@@ -1,0 +1,8 @@
+Bleu    #063f53
+Blanc   #f5f5f5
+Noir    #212121
+
+
+Typo H1     https://www.dafont.com/fr/akira-expanded.font
+Typo P      https://www.dafont.com/fr/coolvetica.font
+
